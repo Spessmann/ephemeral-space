@@ -12,7 +12,7 @@
   parent: BaseSign
   id: ESSignArmory
   name: armory sign
-  description: A sign indicating where the big guns are kept
+  description: A sign indicating where the big guns are kept.
   components:
   - type: Sprite
     sprite: _ES/Structures/Wallmounts/signs.rsi
