@@ -24,9 +24,9 @@ public class GuideEntry
     public string Id = default!;
 
     /// <summary>
-    ///     The name of this guide. This gets localized.
+    ///     The name of this guide. This does not get localized.
     /// </summary>
-    [DataField(required: true)] public LocId Name = default!;
+    [DataField(required: true)] public string Name = default!;
 
     /// <summary>
     ///     The "children" of this guide for when guides are shown in a tree / table of contents.
