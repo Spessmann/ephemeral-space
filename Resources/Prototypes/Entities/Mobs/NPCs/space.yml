@@ -386,16 +386,6 @@
   components:
   - type: Body
     prototype: Mouse
-  - type: GhostRole
-    makeSentient: true
-    allowSpeech: false
-    allowMovement: true
-    name: ghost-role-information-snail-name
-    description: ghost-role-information-snail-description
-    rules: ghost-role-information-freeagent-rules
-    mindRoles:
-    - MindRoleGhostRoleFreeAgentHarmless
-  - type: GhostTakeoverAvailable
   - type: Emoting
   - type: Sprite
     drawdepth: SmallMobs
@@ -506,7 +496,6 @@
   - type: MobPrice
     price: 50
   - type: BadFood
-  - type: NonSpreaderZombie
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
@@ -528,25 +517,6 @@
         visualType: Large
         messages: [ "snail-hurt-by-salt-popup" ]
         probability: 0.66
-
-- type: entity
-  parent: MobSnail
-  id: MobSnailInstantDeath
-  suffix: Smite
-  components:
-  - type: GhostRole
-    mindRoles:
-    - MindRoleGhostRoleFreeAgent
-  - type: MobStateActions
-    actions:
-      Alive:
-      - ActionSmiteNoReq
-      Critical:
-      - ActionCritSuccumb
-      - ActionCritFakeDeath
-      - ActionCritLastWords
-  - type: Godmode
-  - type: MovementAlwaysTouching
 
 - type: entity
   parent: MobSnail
