@@ -31,8 +31,6 @@ public sealed partial class BorgSystem : SharedBorgSystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly PowerCellSystem _powerCell = default!;
 
-    public static readonly ProtoId<JobPrototype> BorgJobId = "Borg";
-
     /// <inheritdoc/>
     public override void Initialize()
     {
