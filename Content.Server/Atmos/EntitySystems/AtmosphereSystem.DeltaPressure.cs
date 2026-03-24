@@ -276,7 +276,7 @@ public sealed partial class AtmosphereSystem
     /// <param name="pressure">The current absolute pressure being experienced by the entity.</param>
     /// <param name="delta">The current delta pressure being experienced by the entity.</param>
     private void EnqueueDeltaPressureDamage(Entity<DeltaPressureComponent> ent,
-        Content.Shared.Atmos.Components.GridAtmosphereComponent gridAtmosComp,
+        GridAtmosphereComponent gridAtmosComp,
         float pressure,
         float delta)
     {
@@ -304,7 +304,7 @@ public sealed partial class AtmosphereSystem
     /// <param name="cvarBatchSize">The batch size to use for this job.</param>
     private sealed class DeltaPressureParallelBulkJob(
         AtmosphereSystem system,
-        Content.Shared.Atmos.Components.GridAtmosphereComponent atmosphere,
+        GridAtmosphereComponent atmosphere,
         int startIndex,
         int cvarBatchSize)
         : IParallelBulkRobustJob
