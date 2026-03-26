@@ -177,8 +177,6 @@
     key: walls
   - type: Paintable
     group: AirlockStandard
-  - type: StaticPrice
-    price: 150
   - type: LightningTarget
     priority: 1
   - type: Tag

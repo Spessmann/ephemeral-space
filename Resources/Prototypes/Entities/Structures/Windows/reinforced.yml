@@ -119,8 +119,6 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: StaticPrice
-    price: 22.5
 
 - type: entity
   parent: ReinforcedWindow
